@@ -1,0 +1,753 @@
+<div class="slides">
+    <div class="s-warp">
+        <div class="carousel">
+            <a class="carousel_img" href="#">
+                <img src="http://p1.music.126.net/MpSdMV35Svb4rALgnUe1_g==/18612532837047238.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/36fSZbvg6e_lZOJUQCjYoQ==/18541064581289517.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/OynN6AnHv9S85hqQtSTs0g==/18577348465009263.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/WwkBFIRd8mzdsjT1tngRFA==/19216164719065400.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/ltkGk-HOmTiTwaiXoBgMmA==/18577348465009290.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/mZqAZ_WRohvkypdZPAs2YA==/18495984604544627.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/_0Por7_xOeqrMWvjZic0bA==/18887410742346935.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="http://p1.music.126.net/P7jpkQyWLJKUnyZUeHv83Q==/19153492556286951.jpg" alt="">
+            </a>
+        </div>
+        <a class="btn-l" href="javascript:void(0)">&nbsp;</a>
+        <a class="btn-r" href="javascript:void(0)">&nbsp;</a>
+        <div class="circle">
+            <a class="dot carousel_img" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+            <a class="dot" href="#">&nbsp;</a>
+        </div>
+        <div class="download">
+            <a href="#">下载客户端</a>
+            <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            <span class="shodw"></span>
+        </div>
+    </div>
+</div>
+<div class="discover-module clearfix">
+    <div class="sidebar-left">
+        <div class="sl-content">
+            <div class="sl-nav clearfix">
+                <a class="tit" href="#">热门推荐</a>
+                <div class="tab">
+                    <a href="#">华语</a>
+                    <span class="line">|</span>
+                    <a href="#">流行</a>
+                    <span class="line">|</span>
+                    <a href="#">摇滚</a>
+                    <span class="line">|</span>
+                    <a href="#">民谣</a>
+                    <span class="line">|</span>
+                    <a href="#">电子</a>
+                </div>
+                <span class="more">
+                    <a href="#">更多</a>
+                    <i class="cor"></i>
+                </span>
+            </div>
+        </div>
+        <ul class="sl-topic clearfix">
+            <li>
+                <div class="u-cover">
+                    <img ng-src="{{playlist[0].picUrl}}" alt="">
+                    <i class="u-icon2"></i>
+                    <a class="msk" href="#" title="{{playlist[0].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{playlist[0].playCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec">
+                    <a href="#" title="{{playlist[0].name}}">{{playlist[0].name}}</a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img ng-src="{{playlist[1].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{playlist[1].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{playlist[1].playCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec">
+                    <a href="#" title="{{playlist[1].name}}">{{playlist[1].name}}</a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img ng-src="{{playlist[2].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{playlist[2].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{playlist[2].playCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec">
+                    <a href="#" title="{{playlist[2].name}}">{{playlist[2].name}}</a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img ng-src="{{dj[0].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{dj[0].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{dj[0].program.listenerCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec clearfix">
+                    <a href="#" title="{{dj[0].name}}">
+                        <i class="u-icn"></i>
+                        {{dj[0].name}}
+                    </a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover">
+                    <img ng-src="{{playlist[3].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{playlist[3].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{playlist[3].playCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec">
+                    <a href="#" title="{{playlist[3].name}}">
+                        {{playlist[3].name}}
+                    </a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img ng-src="{{dj[1].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{dj[1].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{dj[1].program.listenerCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec">
+                    <a href="#" title="{{dj[1].name}}">
+                        <i class="u-icn"></i>
+                        {{dj[1].name}}
+                    </a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img ng-src="{{playlist[5].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{playlist[5].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{playlist[5].playCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec">
+                    <a href="#" title="{{playlist[5].name}}">{{playlist[5].name}}</a>
+                </p>
+            </li>
+            <li>
+                <div class="u-cover sec">
+                    <img src="{{dj[2].picUrl}}" alt="">
+                    <a class="msk" href="#" title="{{dj[2].name}}"></a>
+                    <div class="u-bottom clearfix">
+                        <span class="icon-headset"></span>
+                        <span class="nb">{{dj[2].program.listenerCount}}</span>
+                        <a href="#" title="播放"></a>
+                    </div>
+                </div>
+                <p class="dec sec">
+                    <a href="#" title="{{dj[2].name}}">
+                        <i class="u-icn"></i>
+                        {{dj[2].name}}
+                    </a>
+                </p>
+            </li>
+        </ul>
+        <div class="sl-content">
+            <div class="sl-nav sl-second clearfix">
+                <a class="tit" href="#">新碟上架</a>
+                <span class="more">
+                    <a href="#">更多</a>
+                    <i class="cor"></i>
+                </span>
+            </div>
+        </div>
+        <div class="n-disk">
+            <div class="inner">
+                <a href="javascript:void(0);" class="click-flag las">&nbsp;</a>
+                <div class="roll">
+                    <ul class="roller-flag clearfix" id="auto-id-3kPs6CLC8rMxp4f6">
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/oKJ3m7e7QJq_UOXF6MSePA==/109951163053012743.jpg?param=100y100">
+                                <a title="沙发" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="沙发" href="#" class="s-fc0 tit">沙发</a>
+                            </p>
+                            <p class="tit f-thide" title="金玟岐">
+                                <a class="s-fc3" href="#">金玟岐</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/MOK4FUwQS3lyA9dJ5xlywQ==/18853325881512542.jpg?param=100y100">
+                                <a title="Red Pill Blues (Deluxe)" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Red Pill Blues (Deluxe)" href="#" class="s-fc0 tit">Red Pill Blues (Deluxe)</a>
+                            </p>
+                            <p class="tit f-thide" title="Maroon 5">
+                                <a class="s-fc3" href="#">Maroon 5</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/CgeOiKJ8c4xjVbzwKqVcVQ==/109951163054798058.jpg?param=100y100">
+                                <a title="像风一样" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="像风一样" href="#" class="s-fc0 tit">像风一样</a>
+                            </p>
+                            <p class="tit f-thide" title="薛之谦">
+                                <a class="s-fc3" href="#">薛之谦</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/_VjuIgInJqwxdyoy4FF3IA==/18357446138140955.jpg?param=100y100">
+                                <a title="No.13 作品 : 跳舞的梵谷" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="No.13 作品 : 跳舞的梵谷" href="#" class="s-fc0 tit">No.13 作品 : 跳舞的梵谷</a>
+                            </p>
+                            <p class="tit f-thide" title="孙燕姿">
+                                <a class="s-fc3" href="#">孙燕姿</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/rr3h2OfzEH6EikiZeBsI6A==/18853325881512559.jpg?param=100y100">
+                                <a title="Call It What You Want" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Call It What You Want" href="#" class="s-fc0 tit">Call It What You Want</a>
+                            </p>
+                            <p class="tit f-thide" title="Taylor Swift">
+                                <a class="s-fc3" href="#">Taylor Swift</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="roller-flag clearfix" id="auto-id-nfrSMaAvTTS0eeR7">
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/BKXA-AzjdsLmGkYuhGaVGg==/109951163053555239.jpg?param=100y100">
+                                <a title="The Thrill Of It All (Special Edition)" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="The Thrill Of It All (Special Edition)" href="#" class="s-fc0 tit">The Thrill Of It All (Special Edition)</a>
+                            </p>
+                            <p class="tit f-thide" title="Sam Smith">
+                                <a class="s-fc3" href="#">Sam Smith</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/APsaKSQDormEEmiNVyZytA==/109951163054151223.jpg?param=100y100">
+                                <a title="Dream Part.02" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Dream Part.02" href="#" class="s-fc0 tit">Dream Part.02</a>
+                            </p>
+                            <p class="tit f-thide" title="ASTRO">
+                                <a class="s-fc3" href="#">ASTRO</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/ojq446JdQ2qqZ9bC3THACw==/109951163054748578.jpg?param=100y100">
+                                <a title="故梦小夜集" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="故梦小夜集" href="#" class="s-fc0 tit">故梦小夜集</a>
+                            </p>
+                            <p class="tit f-thide" title="网易音乐人">
+                                <a class="s-fc3" href="#">网易音乐人</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/rTb28CZeLWxIRuSlJWkPLQ==/18850027346628137.jpg?param=100y100">
+                                <a title="All Falls Down" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="All Falls Down" href="#" class="s-fc0 tit">All Falls Down</a>
+                            </p>
+                            <p class="tit f-thide" title="Alan Walker / Noah Cyrus / Digital Farm Animals">
+                                <a class="s-fc3" href="#">Alan Walker</a>
+                                &nbsp;/&nbsp;
+                                <a class="s-fc3" href="#">Noah Cyrus</a>
+                                &nbsp;/&nbsp;
+                                <a class="s-fc3" href="#">Digital Farm Animals</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/o4wzN7_YQQJ-PaZIckhFdQ==/109951163053012110.jpg?param=100y100">
+                                <a title="Twicetagram" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Twicetagram" href="#" class="s-fc0 tit">Twicetagram</a>
+                            </p>
+                            <p class="tit f-thide" title="TWICE">
+                                <a class="s-fc3" href="#">TWICE</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="roller-flag clearfix" id="auto-id-kn4TMuGl3g8vCqk8">
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/oKJ3m7e7QJq_UOXF6MSePA==/109951163053012743.jpg?param=100y100">
+                                <a title="沙发" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="沙发" href="#" class="s-fc0 tit">沙发</a>
+                            </p>
+                            <p class="tit f-thide" title="金玟岐">
+                                <a class="s-fc3" href="#">金玟岐</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/MOK4FUwQS3lyA9dJ5xlywQ==/18853325881512542.jpg?param=100y100">
+                                <a title="Red Pill Blues (Deluxe)" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Red Pill Blues (Deluxe)" href="#" class="s-fc0 tit">Red Pill Blues (Deluxe)</a>
+                            </p>
+                            <p class="tit f-thide" title="Maroon 5">
+                                <a class="s-fc3" href="#">Maroon 5</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/CgeOiKJ8c4xjVbzwKqVcVQ==/109951163054798058.jpg?param=100y100">
+                                <a title="像风一样" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="像风一样" href="#" class="s-fc0 tit">像风一样</a>
+                            </p>
+                            <p class="tit f-thide" title="薛之谦">
+                                <a class="s-fc3" href="#">薛之谦</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/_VjuIgInJqwxdyoy4FF3IA==/18357446138140955.jpg?param=100y100">
+                                <a title="No.13 作品 : 跳舞的梵谷" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="No.13 作品 : 跳舞的梵谷" href="#" class="s-fc0 tit">No.13 作品 : 跳舞的梵谷</a>
+                            </p>
+                            <p class="tit f-thide" title="孙燕姿">
+                                <a class="s-fc3" href="#">孙燕姿</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/rr3h2OfzEH6EikiZeBsI6A==/18853325881512559.jpg?param=100y100">
+                                <a title="Call It What You Want" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Call It What You Want" href="#" class="s-fc0 tit">Call It What You Want</a>
+                            </p>
+                            <p class="tit f-thide" title="Taylor Swift">
+                                <a class="s-fc3" href="#">Taylor Swift</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="roller-flag clearfix" id="auto-id-KUk14oo3SVeVJx3h">
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/BKXA-AzjdsLmGkYuhGaVGg==/109951163053555239.jpg?param=100y100">
+                                <a title="The Thrill Of It All (Special Edition)" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="The Thrill Of It All (Special Edition)" href="#" class="s-fc0 tit">The Thrill Of It All (Special Edition)</a>
+                            </p>
+                            <p class="tit f-thide" title="Sam Smith">
+                                <a class="s-fc3" href="#">Sam Smith</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/APsaKSQDormEEmiNVyZytA==/109951163054151223.jpg?param=100y100">
+                                <a title="Dream Part.02" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Dream Part.02" href="#" class="s-fc0 tit">Dream Part.02</a>
+                            </p>
+                            <p class="tit f-thide" title="ASTRO">
+                                <a class="s-fc3" href="#">ASTRO</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/ojq446JdQ2qqZ9bC3THACw==/109951163054748578.jpg?param=100y100">
+                                <a title="故梦小夜集" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="故梦小夜集" href="#" class="s-fc0 tit">故梦小夜集</a>
+                            </p>
+                            <p class="tit f-thide" title="网易音乐人">
+                                <a class="s-fc3" href="#">网易音乐人</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p3.music.126.net/rTb28CZeLWxIRuSlJWkPLQ==/18850027346628137.jpg?param=100y100">
+                                <a title="All Falls Down" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="All Falls Down" href="#" class="s-fc0 tit">All Falls Down</a>
+                            </p>
+                            <p class="tit f-thide" title="Alan Walker / Noah Cyrus / Digital Farm Animals">
+                                <a class="s-fc3" href="#">Alan Walker</a>
+                                &nbsp;/&nbsp;
+                                <a class="s-fc3" href="#">Noah Cyrus</a>
+                                &nbsp;/&nbsp;
+                                <a class="s-fc3" href="#">Digital Farm Animals</a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="u-cover u-cover-alb1">
+                                <img class="j-img" src="http://p4.music.126.net/o4wzN7_YQQJ-PaZIckhFdQ==/109951163053012110.jpg?param=100y100">
+                                <a title="Twicetagram" href="#" class="msk1"></a>
+                                <a href="#" class="icon-play f-alpha f-fr" title="播放"></a>
+                            </div>
+                            <p class="f-thide">
+                                <a title="Twicetagram" href="#" class="s-fc0 tit">Twicetagram</a>
+                            </p>
+                            <p class="tit f-thide" title="TWICE">
+                                <a class="s-fc3" href="#">TWICE</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="click-flag nex">&nbsp;</a>
+            </div>
+        </div>
+        <div class="n-bill">
+            <div class="sl-content">
+                <div class="sl-nav clearfix">
+                    <a class="tit" href="#">榜单</a>
+                    <span class="more">
+                        <a href="#">更多</a>
+                        <i class="cor"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="n-bilst" id="top-flag">
+                <dl class="blk">
+                    <dt class="top clearfix">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" src="http://p3.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100">
+                            <a href="#" class="msk4" title="{{surgeList.name}}"></a>
+                        </div>
+                        <div class="tit">
+                            <a href="#" title="{{surgeList.name}}">
+                                <h3 class="f-fs1 f-thide">{{surgeList.name}}</h3>
+                            </a>
+                            <div class="btn">
+                                <a href="javascript:void(0);" class="s-bg s-bg-9 f-tdn" title="播放">播放</a>
+                                <a href="javascript:void(0);" class="s-bg s-bg-10 f-tdn subscribe-flag" title="收藏">收藏</a>
+                            </div>
+                        </div>
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li class="" ng-repeat="(index,surge) in surgeList.tracks" ng-show="{{index+1}}<=10">
+                                <span class="no no-top" ng-class="{'current_no' : {{index+1}}>3}">{{index+1}}</span>
+                                <a href="#" class="nm s-fc0 f-thide" title="{{surge.name}}">{{surge.name}}</a>
+                                <div class="oper">
+                                    <a href="#" class="s-bg s-bg-11" title="播放"></a>
+                                    <a href="#" class="u-icn u-icn-81" title="添加到播放列表"></a>
+                                    <a href="#" class="s-bg s-bg-12" title="收藏"></a>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="more">
+                            <a href="#" class="s-fc0">查看全部&gt;</a>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="blk">
+                    <dt class="top">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" src="http://p4.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=100y100">
+                            <a href="#" class="msk4" title="{{allMusic.name}}"></a>
+                        </div>
+                        <div class="tit">
+                            <a href="#" title="{{allMusic.name}}">
+                                <h3 class="f-fs1 f-thide">{{allMusic.name}}</h3>
+                            </a>
+                            <div class="btn">
+                                <a href="javascript:void(0);" class="s-bg s-bg-9 f-tdn">播放</a>
+                                <a href="javascript:;" hidefocus="true" class="s-bg s-bg-10 f-tdn subscribe-flag">收藏</a>
+                            </div>
+                        </div>
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li class="" ng-repeat="(index,allSong) in allMusic.tracks" ng-show="{{index+1}}<=10">
+                                <span class="no no-top" ng-class="{'current_no' : {{index+1}}>3}">{{index+1}}</span>
+                                <a href="#" class="nm s-fc0 f-thide" title="{{allSong.name}}">{{allSong.name}}</a>
+                                <div class="oper">
+                                    <a href="#" class="s-bg s-bg-11" title="播放"></a>
+                                    <a href="#" class="u-icn u-icn-81" title="添加到播放列表"></a>
+                                    <a href="#" class="s-bg s-bg-12" title="收藏"></a>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="more">
+                            <a href="#" class="s-fc0">查看全部&gt;</a>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="blk blk-1">
+                    <dt class="top">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" src="http://p4.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=100y100">
+                            <a href="#" class="msk4" title="{{orgList.name}}"></a>
+                        </div>
+                        <div class="tit">
+                            <a href="#" title="{{orgList.name}}">
+                                <h3 class="f-fs1 f-thide">{{orgList.name}}</h3>
+                            </a>
+                            <div class="btn">
+                                <a href="javascript:void(0);" class="s-bg s-bg-9 f-tdn">播放</a>
+                                <a href="javascript:;" hidefocus="true" class="s-bg s-bg-10 f-tdn subscribe-flag" title="收藏">收藏</a>
+                            </div>
+                        </div>
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li class="" ng-repeat="(i,org) in orgList.tracks" ng-show="{{i+1}}<=10">
+                                <span class="no no-top" ng-class="{'current_no' : {{i+1}}>3}">{{i+1}}</span>
+                                <a href="#" class="nm s-fc0 f-thide" title="{{org.name}}">{{org.name}}</a>
+                                <div class="oper">
+                                    <a href="#" class="s-bg s-bg-11" title="播放" hidefocus="true"></a>
+                                    <a href="#" class="u-icn u-icn-81" title="添加到播放列表"></a>
+                                    <a href="#" class="s-bg s-bg-12" title="收藏"></a>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="more">
+                            <a href="#" class="s-fc0">查看全部&gt;</a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-right">
+        <div class="n-myinfo">
+            <p class="note">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+            <a href="#" class="btn">登录</a>
+        </div>
+        <div class="n-singer">
+            <h3 class="v-hd3 clearfix">
+                <span class="f-f1">入驻歌手</span>
+                <a class="more" href="#">查看全部 ></a>
+            </h3>
+            <ul class="n-enter f-cb" id="singer-list">
+                <li>
+                    <a href="#" class="itm f-tdn">
+                        <div class="head">
+                            <img class="j-img" src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62">
+                        </div>
+                        <div class="ifo">
+                            <h4>
+                                <span class="nm f-fs1 f-ib f-thide">张惠妹aMEI</span>
+                            </h4>
+                            <p class="f-thide s-fc3">台湾歌手张惠妹</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="itm f-tdn">
+                        <div class="head">
+                            <img class="j-img" src="http://p1.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62">
+                        </div>
+                        <div class="ifo">
+                            <h4>
+                                <span class="nm f-fs1 f-ib f-thide">Fine乐团</span>
+                            </h4>
+                            <p class="f-thide s-fc3">独立音乐人</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="itm f-tdn">
+                        <div class="head">
+                            <img class="j-img" src="http://p1.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62">
+                        </div>
+                        <div class="ifo">
+                            <h4>
+                                <span class="nm f-fs1 f-ib f-thide">萬曉利</span>
+                            </h4>
+                            <p class="f-thide s-fc3">民谣歌手、中国现代民谣的代表人物之一</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="itm f-tdn">
+                        <div class="head">
+                            <img class="j-img" src="http://p1.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62">
+                        </div>
+                        <div class="ifo">
+                            <h4>
+                                <span class="nm f-fs1 f-ib f-thide">音乐人赵雷</span>
+                            </h4>
+                            <p class="f-thide s-fc3">民谣歌手</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="itm f-tdn">
+                        <div class="head">
+                            <img class="j-img" src="http://p1.music.126.net/U-duMw2-FE0wNRsuwGktPw==/109951162895674268.jpg?param=62y62">
+                        </div>
+                        <div class="ifo">
+                            <h4>
+                                <span class="nm f-fs1 f-ib f-thide">王三溥</span>
+                            </h4>
+                            <p class="f-thide s-fc3">音乐人</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <a class="u-btn2 u-btn2-1" href="#">
+                    <i>申请成为网易音乐人</i>
+                </a>
+            </div>
+        </div>
+        <div class="n-dj">
+            <h3 class="v-hd3 clearfix">
+                <span class="f-f1">热门主播</span>
+            </h3>
+            <ul class="n-hotdj f-cb clearfix" id="hotdj-list">
+                <li>
+                    <a href="#" class="cver">
+                        <img class="j-img" src="http://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40">
+                    </a>
+                    <div class="info">
+                        <p>
+                            <a href="#" class="nm-icn f-thide s-fc0">陈立</a>
+                            <sup class="u-icn u-icn-1 "></sup>
+                        </p>
+                        <p class="f-thide s-fc3">心理学家、美食家陈立教授</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="cver">
+                        <img class="j-img" src="http://p1.music.126.net/y5-sM7tjnxnu_V9LWKgZlw==/7942872001461517.jpg?param=40y40">
+                    </a>
+                    <div class="info">
+                        <p>
+                            <a href="#" class="nm-icn f-thide s-fc0">DJ艳秋</a>
+                            <sup class="u-icn u-icn-1 "></sup>
+                        </p>
+                        <p class="f-thide s-fc3">著名音乐节目主持人</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="cver">
+                        <img class="j-img" src="http://p1.music.126.net/6cc6lgOfQTo6ovNnTHPyJg==/3427177769086282.jpg?param=40y40">
+                    </a>
+                    <div class="info">
+                        <p>
+                            <a href="#" class="nm-icn f-thide s-fc0">国家大剧院古典音乐频道</a>
+                            <sup class="u-icn u-icn-1 "></sup>
+                        </p>
+                        <p class="f-thide s-fc3">国家大剧院古典音乐官方</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="cver">
+                        <img class="j-img" src="http://p1.music.126.net/xa1Uxrrn4J0pm_PJwkGYvw==/3130309604335651.jpg?param=40y40">
+                    </a>
+                    <div class="info">
+                        <p>
+                            <a href="#" class="nm-icn f-thide s-fc0">谢谢收听</a>
+                            <sup class="u-icn u-icn-1 "></sup>
+                        </p>
+                        <p class="f-thide s-fc3">南京电台主持人王馨</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="cver">
+                        <img class="j-img" src="http://p1.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40">
+                    </a>
+                    <div class="info">
+                        <p>
+                            <a href="#" class="nm-icn f-thide s-fc0">DJ晓苏</a>
+                            <sup class="u-icn u-icn-1 "></sup>
+                        </p>
+                        <p class="f-thide s-fc3">独立DJ，CRI环球旅游广播特邀DJ</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

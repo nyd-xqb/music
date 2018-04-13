@@ -1,0 +1,37 @@
+<div class="register" ng-controller="registerController">
+    <div class="section">
+        <div class="register-screen">
+            <div class="register-title">账号登录</div>
+            <form name="registerForm" novalidate>
+                <div class="user">
+                    <label for="name">
+                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" ng-model="name" placeholder="请输入账号" required name="name">
+                    <span class="error" ng-show="registerForm.name.$dirty && registerForm.name.$invalid">
+                        <span ng-show="registerForm.name.$error.required">必填</span>
+                    </span>
+                </div>
+                <div class="pwd">
+                    <label for="password">
+                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    </label>
+                    <input type="password" ng-model="password" placeholder="请输入密码" required name="password">
+                    <span class="error" ng-show="registerForm.password.$dirty && registerForm.password.$invalid">
+                        <span ng-show="registerForm.password.$error.required">必填</span>
+                    </span>
+                </div>
+                <div class="confirmPwd">
+                    <label for="confirmPassword">
+                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    </label>
+                    <input type="password" ng-model="confirmPassword" placeholder="请再次输入密码" required name="confirmPassword">
+                    <span class="error" ng-show="registerForm.confirmPassword.$dirty && registerForm.confirmPassword.$invalid">
+                        <span ng-show="registerForm.confirmPassword.$error.required">必填</span>
+                    </span>
+                </div>
+                <button class="btn-register" ng-click="register()" ng-disabled="registerForm.name.$invalid || registerForm.password.$invalid || registerForm.confirmPassword.$invalid">注册</button>
+            </form>
+        </div>
+    </div>
+</div>

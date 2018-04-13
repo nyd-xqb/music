@@ -1,0 +1,41 @@
+<div class="login" ng-controller="loginController">
+    <div class="section">
+        <div class="login-screen">
+            <div class="login-title">账号登录</div>
+            <form name="loginForm" novalidate>
+                <div class="user">
+                    <label for="name">
+                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" ng-model="name" placeholder="请输入账号" required name="name">
+                    <span class="error" ng-show="loginForm.name.$dirty && loginForm.name.$invalid">
+                        <span ng-show="loginForm.name.$error.required">必填</span>
+                    </span>
+                </div>
+                <br/>
+                <div class="pwd">
+                    <label for="password">
+                        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    </label>
+                    <input type="password" ng-model="password" placeholder="请输入密码" required name="password">
+                    <span class="error" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+                        <span ng-show="loginForm.password.$error.required">必填</span>
+                    </span>
+                </div>
+                <br/>
+                <button class="btn-login" ng-click="login()" ng-disabled="loginForm.name.$invalid || loginForm.password.$invalid">登 录</button>
+            </form>
+            <div class="login-foot clearfix">
+                <span class="login-other">
+                    <a href="/">
+                        < 其他方式登录 </a>
+                </span>
+                <span class="regist">
+                    <a href="/users/register">
+                        没有账号？免费注册 >
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
